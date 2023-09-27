@@ -8,4 +8,8 @@ public class ActividadController {
         return "index";
     }
 
+    @GetMapping("/nuevo")
+    String nuevo(){
+        return "nuevo";
+    }
 }

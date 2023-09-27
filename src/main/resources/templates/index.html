@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -7,11 +7,16 @@
 <body>
     <h1>Concesionario Pirámide</h1>
     <a href="#">Coches</a>
-    <a href="#">Nuevo</a>
+    <a href="/nuevo">Nuevo</a>
     <form action="#" method="post">
-        <input name="data" type="String">
+        <label>
+            <input name="data" type="text"/>
+        </label>
         <button>Enviar</button>
     </form>
 
+    <ul th:each="Coche : ${Coches}" >
+       <li th:text="${Coche}"/>
+    </ul>
 </body>
 </html>
