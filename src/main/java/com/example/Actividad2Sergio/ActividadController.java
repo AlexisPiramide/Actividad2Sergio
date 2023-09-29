@@ -15,7 +15,6 @@ public class ActividadController {
     public List<Coche> coches = new ArrayList<>();
 
     public ActividadController() {
-        // Initialize the list of Coche objects in the constructor
         Coche ferrari = new Coche("15F1JG1", "Ferrari", "Uno caro", 5990);
         Coche dacia = new Coche("H2KH164", "Dacia", "Sandero", 999999);
         Coche abutarda = new Coche("420BLAZE", "Tesla", "Catorce", 42069);
@@ -35,12 +34,19 @@ public class ActividadController {
     public String añadirCoche(Model model,Coche coche) {
         coches.add(coche);
         model.addAttribute("coches",coches);
-        return "nuevo";
+        return "index";
     }
 
     @GetMapping("/nuevo")
     public String mostrarFormularioNuevoCoche() {
         return "nuevo";
+    }
+
+    @PostMapping("/buscar")
+    public String buscar(Model model){
+
+
+        return "buscar";
     }
 }
 
