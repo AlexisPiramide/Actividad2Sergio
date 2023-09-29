@@ -2,46 +2,46 @@ package com.example.Actividad2Sergio;
 
 public class Coche {
 
-    private String Matricula,Marca,Modelo;
-    private Integer Km;
+    private String matricula,marca,modelo;
+    private Integer km;
 
     public Coche(String matricula, String marca, String modelo, Integer km) {
-        this.Matricula = matricula;
-        this.Marca = marca;
-        this.Modelo = modelo;
-        this.Km = km;
+        this.matricula = matricula;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.km = km;
     }
 
     public String getMatricula() {
-        return Matricula;
+        return matricula;
     }
 
     public void setMatricula(String matricula) {
-        Matricula = matricula;
+        this.matricula = matricula;
     }
 
     public String getMarca() {
-        return Marca;
+        return marca;
     }
 
     public void setMarca(String marca) {
-        Marca = marca;
+        this.marca = marca;
     }
 
     public String getModelo() {
-        return Modelo;
+        return modelo;
     }
 
     public void setModelo(String modelo) {
-        Modelo = modelo;
+        this.modelo = modelo;
     }
 
     public Integer getKm() {
-        return Km;
+        return km;
     }
 
     public void setKm(Integer km) {
-        Km = km;
+        this.km = km;
     }
 }
 
