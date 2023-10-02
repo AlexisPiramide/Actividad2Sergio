@@ -1,4 +1,4 @@
-package com.example.Actividad2Sergio;
+package com.example.Actividad2Sergio.Dominio;
 
 public class Coche {
 
